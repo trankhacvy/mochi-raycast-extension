@@ -13,7 +13,7 @@ export function formatCurrency(value?: number, currency?: string) {
   if (currency) {
     strValue = new Intl.NumberFormat("en-US", { style: "currency", currency }).format(scaledValue);
   }
-  return strValue + suffix;
+  return strValue + suffix ?? "";
 }
 
 export function changeIcon(change?: number) {
@@ -26,4 +26,8 @@ export function changeIcon(change?: number) {
 export function isNumeric(value: string) {
   if (typeof value != "string") return false;
   return !isNaN(value as unknown as number) && !isNaN(parseFloat(value));
+}
+
+export function formatNumber(number: number, locale?: string, options?: Intl.NumberFormatOptions) {
+  return Intl.NumberFormat(locale, options).format(number);
 }

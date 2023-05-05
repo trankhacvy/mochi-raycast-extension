@@ -45,6 +45,7 @@ export function useNftTicker(symbol_or_address: string, query_address?: boolean)
 }
 
 export function useNftCollectionTicker(address: string) {
+  console.log(`https://api.mochi.pod.town/api/v1/nfts/collections/tickers?collection_address=${address}&from=1&to=1683090648827`)
   return useFetch<{ data: Collection }>(
     `https://api.mochi.pod.town/api/v1/nfts/collections/tickers?collection_address=${address}&from=1&to=1683090648827`,
     {

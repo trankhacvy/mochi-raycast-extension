@@ -54,8 +54,7 @@ Sub-actions:
 ## Demo
 
 Check out the demo video to see the extension in action.
-
-[Demo](./demo/mochi-raycast.mov)
+https://www.loom.com/share/e0816eef32fc4972b4c6217b9d66959f
 
 ## Use Cases
 
