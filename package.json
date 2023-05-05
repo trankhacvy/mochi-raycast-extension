@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "mochi",
+  "name": "mochi-raycast-extension",
   "title": "Mochi",
   "description": "Mochi bot helps bring the Web3 universe to your Discord server, with ease! Simple query NFT rarity, alert new sales on Discord & Twitter, tips, and so many more.",
   "icon": "command-icon.webp",
@@ -51,5 +51,6 @@
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
     "publish": "npx @raycast/api@latest publish"
-  }
+  },
+  "version": "0.0.1"
 }
